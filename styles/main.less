@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700');
+// @import "Grid";
+:root {
+  --space: 1.5em;
+  --space-lg: 2em;
+  --bg-color: #fff;
+}
+@primary: #FF301B;
+@secondary: #000;
+@bg: #fff;
+@bg-text: @bg;
+@body-text: @secondary;
+@header-text: @primary;
+@color-text-body: @body-text;
+@color-text-links: @body-text;
+@starship: #000;
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: @bg;
+  color: @body-text;
+  font-size: ~"calc(12px + .5vw)";
+  font-style: normal;
+  line-height: 1.52;
+  text-rendering: optimizeLegibility;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+li, p {
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  b {
+    font-weight: 900;
+    color: @header-text;
+  }
+}
+.container {
+  margin: 0 4vw;
+  max-width: 70vw;
+  margin: 0 auto;
+
+}
+.gifs {
+  margin-bottom: 4rem;
+}
+.header {
+  font-weight: 900;
+  letter-spacing: 0.07vw;
+  line-height: 4rem;
+  margin: 0;
+  padding: 0.2rem 0.4rem 0.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  .header;
+  color: #000;
+  font-size: ~"calc(60px + .5vw)";
+
+}
+h2 {
+  .header;
+  color: @primary;
+  font-size: ~"calc(40px + .5vw)";
+
+}
+img {
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 3rem 0;
+  border-bottom: desaturate(@primary, 20%) dashed
+}
